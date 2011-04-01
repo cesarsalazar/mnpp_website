@@ -1,0 +1,57 @@
+@import 'global'
+
+#content
+  @include main-content(700px)
+  padding: 50px
+  @include box-shadow
+  
+  h1
+    margin-top: 0
+    text-align: center
+    span.short
+      font-family: "Coda"
+      font-size: 1.2em
+      color: $gray
+      padding-right: 0.75em
+    span.long
+      font-size: 0.9em
+  
+  .tagline
+    text-align: center
+    color: $black
+    
+  #download
+    text-align: center
+    overflow: hidden
+    padding: 1em
+    .download
+      font-size: 1.2em
+      display: block
+      @include centered(200px)
+      @include round-corners(5px)
+      background-color: $brand
+      color: $white
+      padding: 0.75em 1.5em
+      font-weight: bold
+      text-decoration: none
+      overflow: hidden
+      &:hover
+        background-color: darken($brand,10)
+    .source
+      display: block
+      overflow: hidden
+      margin-top: 0.5em
+  
+  #comparison, #usage, #contributors
+    margin-top: 2em
+  #usage  
+    li, img
+      margin-left: 1em
+    
+  #contents
+    li
+      margin-left: 1em
+      margin-bottom: 0
+  #contributors
+    li
+      margin-left: 1em
